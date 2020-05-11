@@ -14,5 +14,10 @@ export default {
 <style lang="scss" scoped>
 .item {
   border: 1px solid black;
+  padding: 1em;
+}
+
+h2 {
+  margin-bottom: 0.5em;
 }
 </style>

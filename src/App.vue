@@ -5,7 +5,7 @@
     <CardContainer :items="items" />
   </div>
 </template>
-x
+
 <script>
 import CardContainer from "./components/CardContainer.vue";
 import Form from "./components/Form.vue";
@@ -18,10 +18,7 @@ export default {
   name: "app",
   data() {
     return {
-      items: [
-        { title: "Go to store", description: "Get fish, eggs milk", id: 1 },
-        { title: "Go to bank", description: "Deposit funds", id: 2 }
-      ]
+      items: []
     };
   },
   methods: {
@@ -33,6 +30,12 @@ export default {
 </script>
 
 <style lang="scss">
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -40,11 +43,17 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  max-width: 1000px;
+  margin: 5em auto;
 }
 
 h1,
 h2 {
   font-weight: normal;
+}
+
+h1 {
+  margin-bottom: 1em;
 }
 
 ul {
